@@ -1,15 +1,12 @@
 interface IPage1Page2 {
-    title: "The awesome page"| "Python or Js";
-    likes: 100|5;
-    accounts: ["Max", "Anton", "Nikita"] | ["Alex"];
-    status: "open"|"close";
-    details: {
-        createAt: new Date("2021-01-01");
-        updateAt: new Date("2021-05-01");
-    };
+  title: string;
+  likes: number;
+  accounts: string[];
+  status: string;
+  details: {};
 }
 
-const page1:IPage1Page2 = {
+const page1: IPage1Page2 = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -20,7 +17,7 @@ const page1:IPage1Page2 = {
   },
 };
 
-const page2:IPage1Page2 = {
+const page2: IPage1Page2 = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],

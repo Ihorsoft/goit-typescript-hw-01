@@ -1,3 +1,3 @@
-function merge(objA: any, objB: any) {
+function merge<T, U>(objA: T, objB: U) {
   return Object.assign(objA, objB);
 }
